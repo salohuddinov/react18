@@ -1,0 +1,56 @@
+.banner__bg {
+    width: 100vw;
+    height: 600px;
+    margin-left: -120px;
+    background: rgb(64, 191, 255);
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 55px 0;
+}
+
+.banner__right img {
+    display: flex;
+    margin-top: -85px;
+}
+
+.banner__left h2 {
+    width: 571px;
+    height: 166px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 83px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.banner__left p {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.banner__left button {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    background: transparent;
+    padding: 5px;
+}
+
+.banner__left button:hover {
+    box-shadow: 0 2px 1px 0 #fff;
+}

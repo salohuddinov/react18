@@ -31,7 +31,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <div className="navbar__bg">
         <div className="container">
           <Toolbar disableGutters>

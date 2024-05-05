@@ -1,0 +1,44 @@
+.footer {
+    background: rgb(188, 221, 254);
+}
+
+.footer__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.footer__card h2 {
+    color: rgb(34, 38, 42);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.footer__card p {
+    color: rgb(34, 38, 42);
+    font-family: Proxima Nova;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.footer__bootm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 55px 0;
+    box-shadow: 0 1px 0 0 #fff;
+}
+
+.plast__card {
+    display: flex;
+    padding: 20px 0;
+    margin-left: 1000px;
+}
