@@ -1,0 +1,72 @@
+.hero__img {
+    width: 1718.48px;
+    height: 650px;
+    margin-left: -105px;
+    margin-bottom: 100px;
+    background-image: url(../../images/hero.png);
+}
+
+.hero__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: -160px;
+    background: #ddd;
+    border-radius: 10px;
+}
+
+.hero__card {
+    width: 417.94px;
+    height: 358.31px;
+    background: #ddd;
+    padding: 20px;
+    transition: .5s ease-in-out;
+}
+
+.hero__card:hover {
+    box-shadow: 1px 1px 10px 0px #222;
+    border-radius: 10px;
+}
+
+.hero__card img {
+    width: 100%;
+    height: 230px;
+}
+
+.hero__card h2 {
+    width: 202.18px;
+    height: 58.08px;
+    color: rgb(34, 50, 99);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.price {
+    display: flex;
+}
+
+.price h2 {
+    color: rgb(144, 152, 177);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-decoration-line: line-through;
+}
+
+.price h3 {
+    color: rgb(251, 113, 129);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
