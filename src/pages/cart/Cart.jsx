@@ -28,8 +28,8 @@ const Cart = () => {
       <div className="inc__dec">
         <h4> {el.quantity} </h4>
         <div className="dec">
-          <button onClick={() => handleDecerment(el)}> <KeyboardArrowUpIcon /> </button>
-          <button onClick={() => dispatch(incCart(el))}> <KeyboardArrowDownIcon /> </button>
+          <button onClick={() => dispatch(incCart(el))}> <KeyboardArrowUpIcon /> </button>
+          <button onClick={() => handleDecerment(el)}> <KeyboardArrowDownIcon /> </button>
         </div>
       </div>
       <div className="subtotal">
@@ -41,9 +41,8 @@ const Cart = () => {
   return (
     <>
       <div className="container">
-        <div className="cards">
+        <div className="carts">
           {items}
-          {/* {dale} */}
         </div>
       </div>
     </>

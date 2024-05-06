@@ -37,7 +37,7 @@ function Navbar() {
           <Toolbar disableGutters>
             <div className="header__ms ">
               <Link className="navbar__logo" to="/">
-                <img src={logo} alt="Logo" />
+                <img className='logo' src={logo} alt="Logo" />
               </Link>
               <Box sx={{ flexGrow: 1 }}>
                 <IconButton

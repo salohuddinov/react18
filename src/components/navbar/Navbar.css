@@ -2,8 +2,6 @@
 
 .header__ms {
     display: flex !important;
-    width: 1920px !important;
-    justify-content: space-between !important;
     align-items: center;
     padding: 5px;
 }
@@ -11,6 +9,10 @@
 .navbar__bg {
     display: flex;
     background: #fff;
+}
+
+.logo {
+    margin-right: 550px;
 }
 
 .active {

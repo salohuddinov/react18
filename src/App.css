@@ -61,7 +61,7 @@ body {
     justify-content: center;
     background-color: rgb(255, 255, 255);
     opacity: 0.5;
-    /* transition: 1s; */
+    transition: 1s;
 }
 
 
