@@ -5,12 +5,10 @@ import { useDispatch, useSelector } from "react-redux"
 import { toggleToWishes } from "../../context/wishlistSlice"
 import { addToCard } from "../../context/cartSlice";
 import { Link } from 'react-router-dom'
+import Skeleton from '../skeleton/Skeleton'
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-// import Skeleton from '../../components/skeleton/Skeleton';
-
-
 
 const Products = () => {
     const [data, setData] = useState([])
@@ -57,14 +55,14 @@ const Products = () => {
                     <button className='span__icons' onClick={() => dispatch(toggleToWishes(el))}>
                         {
                             wishes.some(w => w.id === el.id) ?
-                                <FavoriteBorderIcon /> :
-                                <FavoriteOutlinedIcon />
+                                <FavoriteOutlinedIcon /> :
+                                <FavoriteBorderIcon />
                         }
                     </button>
                 </span>
             </div>
             <p>{el.category}</p>
-            <Link to={`/product/${el.id}`}>
+            <Link to={`/single/${el.id}`}>
                 <h2>{el.title}</h2>
             </Link>
             <div className="star">
@@ -96,7 +94,7 @@ const Products = () => {
                 <li className='conculution__li' onClick={() => getCategory("all")}>All</li>
                 {categoryItems}
             </ul>
-            {/* {loading && <Skeleton />} */}
+            {loading && <Skeleton />}
             <div className="wrapper container">{products}</div>
             <button onClick={() => setCount(p => p + 4)} className='btn-see'>See more</button>
         </div>

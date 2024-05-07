@@ -6,9 +6,12 @@ import axios from 'axios';
 import { API_URL } from '../../static'
 import { toggleToWishes } from "../../context/wishlistSlice"
 import { addToCard } from "../../context/cartSlice";
-import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import { FaFacebookF } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
+import SingleBtm from "../../components/singlebtm/SingleBtm"
+import Star from '../../components/star/Star';
+import Singlewrapper from '../../components/singlewrapper/Singlewrapper';
 
 
 function Single() {
@@ -35,7 +38,6 @@ function Single() {
                 <div class="load-inner load-three"></div>
                 <span class="text">Loading...</span>
             </div>
-
         </div>
     };
 
@@ -53,8 +55,8 @@ function Single() {
                         </div>
                     </div>
                     <div className="single__right">
-                        <h2>Seeds Of Change Oraganic Quinoa, Brown</h2>
-                        <div className="star">
+                        <h2>Nike Airmax 270 React</h2>
+                        <div className="starwrapper">
                             <div class="rating">
                                 <input type="radio" id="star5" name="rate" value="5" />
                                 <label for="star5" title="text"></label>
@@ -68,37 +70,69 @@ function Single() {
                                 <label for="star1" title="text"></label>
                             </div>
                             <p>({product?.rating.rate} Review)</p>
+                            <h2>Submit a review</h2>
                         </div>
-                        <div className="fost">
-                            <h2 className='single__price'>$ {product?.price}</h2>
-                            <h3>{product?.rating.count}</h3>
+                        <div className="lings"></div>
+                        <div className="pricee">
+                            <h2>${product?.price}</h2>
+                            <h3>$534,33</h3>
+                            <p>{product?.rating.count}% off</p>
                         </div>
-                        <p className='single__right__p'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Aliquam rem officia, corrupti reiciendis minima nisi modi, quasi,
-                            odio minus dolore impedit fuga eum eligendi.
-                        </p>
-                        <div className="product__count">
-                            <h2>Size/Weight :</h2>
-                            <button>50kg</button>
-                            <button>80kg</button>
-                            <button>120kg</button>
-                            <button>200kg</button>
+                        <div className="aboutproduct">
+                            <h3>Availability:</h3>
+                            <h3>In stock</h3>
+                            <h3>Category:</h3>
+                            <h3>Accessories</h3>
+                            <h3>Free shipping</h3>
+                        </div>
+                        <div className="lings"></div>
+                        <div className="collor">
+                            <h3>Select Color:</h3>
+                            <input type="color" />
+                            <input type="color" />
+                            <input type="color" />
+                            <input type="color" />
+                        </div>
+                        <div className="size">
+                            <h3>Size</h3>
+                            <select className='size__select'>
+                                <option value="XS">XS</option>
+                                <option value="XS">X</option>
+                                <option value="XS">S</option>
+                                <option value="XS">M</option>
+                            </select>
                         </div>
                         <form className='element'>
-                            <input className='element__inout' type="number" />
-                            <h4 className='addtocart'>Add to cart</h4>
-                            <button className='span__icons' onClick={() => dispatch(addToCard(el))}> <ShoppingCartOutlinedIcon /></button>
-                            <button className='span__icons' onClick={() => dispatch(toggleToWishes(el))}>
-                                {
-                                    wishes.some(w => w.id === el.id) ?
-                                        <FavoriteBorderIcon /> :
-                                        <FavoriteOutlinedIcon />
-                                }
-                            </button>
+                            <div className='kenzo'>
+                                <button type='button' className='button__span'>-</button>
+                                <button type='button'>2</button>
+                                <button type='button' className='button__span'>+</button>
+                            </div>
+                            <div className="add">
+                                <button type='button' className='element__button' onClick={() => dispatch(addToCard(el))}>Add To Cart</button>
+                                <button type='button' className='span__icons' onClick={() => dispatch(toggleToWishes(el))}><FavoriteBorderIcon /></button>
+                            </div>
                         </form>
+                        <div className="edlink">
+                            <button className='edlink__button1'><FaFacebookF /> Share on Facebook</button>
+                            <button className='edlink__button2'><FaTwitter /> Share on Twitter</button>
+                        </div>
+                    </div>
+                    <div className="single__card">
+                        <img src={product?.image} alt="nsjk" />
+                        <Star />
+                        <div className="pricce">
+                            <h2>${product?.price}</h2>
+                            <h3>$534,33</h3>
+                        </div>
+                        <div className="act"></div>
                     </div>
                 </div>
-            </div>
+                <div className="single__bootm">
+                    <SingleBtm />
+                </div>
+                <Singlewrapper />
+            </div >
         </>
     )
 }

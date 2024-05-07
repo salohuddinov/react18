@@ -1,14 +1,17 @@
 import React from 'react'
 import './Navbarr.css'
 import { Link } from 'react-router-dom';
-import Badge from '@mui/material/Badge';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
 import SearchIcon from '@mui/icons-material/Search';
+import { useSelector } from "react-redux";
+
 
 function Navbarr() {
+    const wishes = useSelector((state) => state.wishlist.value);
+    const carts = useSelector((state) => state.cart.value);
     return (
         <>
             <div className="container">
@@ -20,15 +23,25 @@ function Navbarr() {
                     <div className="header__right">
                         <div className="header__icons">
                             <Link to={"/admin"} > <PersonOutlineIcon /> </Link>
-                            <Link to={"/wishtlist"}>
-                                <Badge badgeContent={1} color="secondary">
-                                    <FavoriteBorderOutlinedIcon />
-                                </Badge>
+                            <Link className='navlink' to={"/wishlist"}>
+                                <FavoriteBorderOutlinedIcon className='nac__icon' />
+                                {wishes.length > 0 ? (
+                                    <sup>
+                                        <p className='sup__p'>{wishes.length}</p>
+                                    </sup>
+                                ) : (
+                                    <></>
+                                )}
                             </Link>
-                            <Link to={"/cart"}>
-                                <Badge badgeContent={1} color="secondary">
-                                    <ShoppingCartTwoToneIcon />
-                                </Badge>
+                            <Link className='navlink' to={"/cart"}>
+                                <ShoppingCartTwoToneIcon className='nac__icon' />
+                                {carts.length > 0 ? (
+                                    <sub>
+                                        <p className='sup__p'>{carts.length}</p>
+                                    </sub>
+                                ) : (
+                                    <></>
+                                )}
                             </Link>
                         </div>
                         <div className="kons">
@@ -38,7 +51,7 @@ function Navbarr() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     )
 }

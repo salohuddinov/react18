@@ -38,10 +38,36 @@
     display: flex;
     width: 100%;
     max-width: 55px;
-    margin: 0 25px;
+    margin: 0px 25px;
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+
+.navlink {
+    display: flex;
+}
+
+.nac__icon {
+    display: inline-block;
+}
+
+.sup__p {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    background: rgb(251, 113, 129);
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-left: -8px;
+    margin-top: -10px;
 }
 
 .kons {

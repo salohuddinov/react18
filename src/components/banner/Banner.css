@@ -7,10 +7,13 @@
 
 .banner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 55px 0;
+    padding: 0 70px;
 }
+
 
 .banner__right img {
     display: flex;
@@ -18,7 +21,8 @@
 }
 
 .banner__left h2 {
-    width: 571px;
+    width: 100%;
+    max-width: 501px;
     height: 166px;
     color: rgb(255, 255, 255);
     font-family: Poppins;
@@ -30,6 +34,7 @@
 }
 
 .banner__left p {
+    width: 100%;
     color: rgb(255, 255, 255);
     font-family: Poppins;
     font-size: 24px;
@@ -53,4 +58,12 @@
 
 .banner__left button:hover {
     box-shadow: 0 2px 1px 0 #fff;
+}
+
+@media screen and (max-width: 500px) {
+    .banner__right img {
+        display: flex;
+        width: 350px;
+        margin: 10px auto;
+    }
 }

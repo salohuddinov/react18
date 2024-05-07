@@ -16,6 +16,7 @@ function Home() {
             .then(res => setData(res.data.products))
             .catch(res => console.log(res))
     }, [])
+
     return (
         <>
             <div className="container">

@@ -49,12 +49,17 @@
 
 .main__centr {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 25px;
+
 }
 
 .main__centr__card {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
@@ -105,7 +110,8 @@
 
 .main__form {
     display: flex;
-    width: 635px;
+    width: 100%;
+    max-width: 605px;
     height: 64px;
     align-items: center;
     justify-content: space-between;

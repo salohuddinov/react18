@@ -2,21 +2,29 @@
 
 .header__ms {
     display: flex !important;
-    align-items: center;
-    padding: 5px;
+    padding: 5px 20px;
 }
 
 .navbar__bg {
-    display: flex;
+    width: 100%;
     background: #fff;
 }
 
-.logo {
-    margin-right: 550px;
+.cent {
+    display: flex;
+    align-items: center;
 }
 
 .active {
-    background: #cdcdcd;
+    box-shadow: 0 0 4px 0 #ff0000;
+}
+
+.logo {
+    margin-right: 170px;
+}
+
+.navvv {
+    display: flex;
 }
 
 .nav__item {
@@ -28,11 +36,16 @@
     letter-spacing: 0% !important;
     text-align: left !important;
     transition: .3s ease-in-out !important;
-    padding: 2px 20px !important;
-    border-radius: 10px !important;
+    padding: 2px 13px !important;
+    border-radius: 7px !important;
 }
 
 .nav__item:hover {
     color: rgb(64, 191, 255) !important;
-    box-shadow: 0 1.50px 0 1px;
+}
+
+@media screen and (max-width: 900px) {
+    .nav__item {
+        display: none;
+    }
 }

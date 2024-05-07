@@ -4,7 +4,9 @@
 
 .footer__top {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 15px;
     justify-content: space-around;
     padding-top: 100px;
 }
@@ -35,6 +37,12 @@
     align-items: center;
     padding: 55px 0;
     box-shadow: 0 1px 0 0 #fff;
+}
+
+@media screen and (max-width: 500px) {
+    .footer__bootm {
+        display: none;
+    }
 }
 
 .plast__card {

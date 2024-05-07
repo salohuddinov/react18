@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const mainUrl = axios.create({
-  baseURL: "https://fakestoreapi.com"
+  baseURL: "https://dummyjson.com"
 })
 
 mainUrl.interceptors.request.use((req) => {

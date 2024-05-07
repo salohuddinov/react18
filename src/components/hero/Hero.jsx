@@ -16,9 +16,10 @@ function Hero() {
                         <div className="price">
                             <h2>$534,33</h2>
                             <h3>24% Off</h3>
+                            <h1>$299,43</h1>
                         </div>
                     </div>
-                    <div className="hero__card">
+                    <div className="hero__carrd">
                         <h2>FS - Nike Air Max 270 React...</h2>
                         <img src={rasm2} alt="skjnjdsjfj" />
                         <div className="price">
@@ -26,12 +27,13 @@ function Hero() {
                             <h3>24% Off</h3>
                         </div>
                     </div>
-                    <div className="hero__card">
+                    <div className="hero__carrd">
                         <h2>FS - Nike Air Max 270 React...</h2>
                         <img src={rasm3} alt="skjnjdsjfj" />
                         <div className="price">
                             <h2>$534,33</h2>
                             <h3>24% Off</h3>
+                            <h1>$299,43</h1>
                         </div>
                     </div>
                 </div>

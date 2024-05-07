@@ -1,0 +1,99 @@
+.login {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px 1px #ddd;
+}
+
+.loging {
+    width: 100%;
+    max-width: 400px;
+    height: 403.75px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    padding: 25px 31px;
+}
+
+
+.loging h3 {
+    color: rgb(68, 68, 68);
+    font-family: Segoe UI;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: -10px;
+    margin-top: 15px;
+}
+
+.loging__button {
+    width: 100%;
+    max-width: 340px;
+    height: 55px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: rgb(51, 160, 255);
+    color: rgb(255, 255, 255);
+    font-family: Nunito;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: -2%;
+    text-align: center;
+}
+
+.loging input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 338px;
+    height: 44.38px;
+    box-sizing: border-box;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    padding-left: 20px;
+}
+
+.paswword {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 338px;
+    height: 46.38px;
+    box-sizing: border-box;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+
+}
+
+.paswword input {
+    padding: 0 20px;
+    border: none;
+}
+
+.paswword::placeholder {
+    color: rgb(119, 119, 119);
+    font-family: Segoe UI;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.paswword__button {
+    display: flex;
+    font-size: 22px;
+    margin-right: 20px;
+    background-color: transparent;
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.contact {
+    width: 100%;
+    max-width: 1230px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+.form__title {
+    width: 100%;
+    max-width: 626px;
+    height: 715px;
+    background-color: rgb(0, 166, 255);
+    padding: 123px 106px 320px;
+}
+
+.form__title h1 {
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.datas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 56px;
+    gap: 35px;
+}
+
+.datas h2 {
+    width: 100%;
+    max-width: 220px;
+    height: 32px;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+.radus {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 166, 255);
+    border-radius: 50%;
+    margin-left: 405px;
+    margin-top: -135px;
+}
+
+.contact__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.name label,
+.message label {
+    display: block;
+    color: rgb(55, 55, 55);
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.name input {
+    width: 100%;
+    max-width: 490px;
+    height: 73.17px;
+    border: 1px solid rgb(150, 147, 147);
+    border-radius: 3px;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.01);
+    background: rgb(255, 255, 255);
+    padding: 2px 22px;
+    transition: .4s ease-in-out;
+}
+
+.name input::placeholder {
+    color: rgb(150, 147, 147);
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+.message textarea {
+    width: 100%;
+    max-width: 490px;
+    height: 229.76px;
+    border: 1px solid rgb(150, 147, 147);
+    border-radius: 3px;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.01);
+    background: rgb(255, 255, 255);
+    transition: .4s ease-in-out;
+}
+
+.message textarea:hover,
+.name input:hover {
+    border: 1px solid rgb(51, 160, 255);
+}

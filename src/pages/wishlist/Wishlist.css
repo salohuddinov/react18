@@ -1,0 +1,8 @@
+.not {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}

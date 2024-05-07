@@ -11,29 +11,47 @@
     flex-wrap: wrap;
     gap: 10px;
     margin-top: -160px;
-    background: #ddd;
-    border-radius: 10px;
 }
 
-.hero__card {
+.hero__card,
+.hero__carrd {
     width: 417.94px;
-    height: 358.31px;
+    height: 378.31px;
     background: #ddd;
     padding: 20px;
-    transition: .5s ease-in-out;
-}
-
-.hero__card:hover {
-    box-shadow: 1px 1px 10px 0px #222;
     border-radius: 10px;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 1px 0 #000;
 }
 
-.hero__card img {
+@media screen and (max-width: 500px) {
+
+    .hero__card,
+    .hero__carrd {
+        width: 330px;
+        align-items: center;
+        justify-content: center;
+        margin-left: -10px;
+    }
+}
+
+.hero__carrd {
+    background: #fff;
+}
+
+.hero__card:hover,
+.hero__carrd:hover {
+    box-shadow: 1px 1px 10px 0px #222;
+}
+
+.hero__card img,
+.hero__carrd img {
     width: 100%;
     height: 230px;
 }
 
-.hero__card h2 {
+.hero__card h2,
+.hero__carrd h2 {
     width: 202.18px;
     height: 58.08px;
     color: rgb(34, 50, 99);
@@ -48,9 +66,25 @@
 
 .price {
     display: flex;
+    width: 330px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.price h1 {
+    width: 117.82px;
+    color: rgb(64, 191, 255);
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 180%;
+    letter-spacing: 0.5px;
+    text-align: left;
 }
 
 .price h2 {
+    width: 73px;
     color: rgb(144, 152, 177);
     font-family: Poppins;
     font-size: 18px;
@@ -62,6 +96,7 @@
 }
 
 .price h3 {
+    width: 75.54px;
     color: rgb(251, 113, 129);
     font-family: Poppins;
     font-size: 18px;

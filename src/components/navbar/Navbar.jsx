@@ -9,15 +9,8 @@ import MenuItem from '@mui/material/MenuItem';
 import './Navbar.css';
 import logo from '../../images/logo.png';
 import { NavLink, Link } from 'react-router-dom';
-import { styled } from '@mui/system';
 
-const StyledNavLink = styled(NavLink)(({ theme }) => ({
-  textDecoration: 'none',
-  color: 'inherit',
-  '&:hover': {
-    textDecoration: 'underline',
-  },
-}));
+
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -34,9 +27,9 @@ function Navbar() {
     <AppBar position="fixed">
       <div className="navbar__bg">
         <div className="container">
-          <Toolbar disableGutters>
-            <div className="header__ms ">
-              <Link className="navbar__logo" to="/">
+          <div className="cent">
+            <Toolbar className="header__ms" disableGutters>
+              <Link to="/">
                 <img className='logo' src={logo} alt="Logo" />
               </Link>
               <Box sx={{ flexGrow: 1 }}>
@@ -70,31 +63,33 @@ function Navbar() {
                   }}
                 >
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <StyledNavLink to="/">Home</StyledNavLink>
+                    <NavLink to="/">Home</NavLink>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <StyledNavLink to="/login">Login</StyledNavLink>
+                    <NavLink to="/login">Login</NavLink>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <StyledNavLink to="/contactus">ContactUs</StyledNavLink>
+                    <NavLink to="/contactus">ContactUs</NavLink>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <StyledNavLink to="/cart">Cart</StyledNavLink>
+                    <NavLink to="/cart">Cart</NavLink>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <StyledNavLink to="/wishtlist">Wishlist</StyledNavLink>
+                    <NavLink to="/wishtlist">Wishlist</NavLink>
                   </MenuItem>
                 </Menu>
               </Box>
-              <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            </Toolbar>
+            <Box >
+              <div className="navvv">
                 <NavLink className='nav__item' to="/">Home</NavLink>
-                <NavLink className='nav__item' to="/login">Login</NavLink>
-                <NavLink className='nav__item' to="/contactus">ContactUs</NavLink>
-                <NavLink className='nav__item' to="/cart">Cart</NavLink>
-                <NavLink className='nav__item' to="/wishtlist">Wishlist</NavLink>
-              </Box>
-            </div>
-          </Toolbar>
+                <Link to={"#"} className='nav__item'>BAGS</Link>
+                <Link to={"#"} className='nav__item'>SNEAKERS</Link>
+                <Link to={"#"} className='nav__item'>BELT</Link>
+                <NavLink className='nav__item' to="/contactus">CONTACT</NavLink>
+              </div>
+            </Box>
+          </div>
         </div>
       </div>
     </AppBar>
