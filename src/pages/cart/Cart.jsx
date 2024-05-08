@@ -67,7 +67,15 @@ const Cart = () => {
     total += subtotal;
   });
 
-  const handleOrder = () => {
+  const handleOrder = (e) => {
+    e.preventDefault()
+    if (!name.trim() || !email.trim()) {
+      return toast.warn("Malumot to'liq emas")
+    }
+    e.preventDefault()
+    if (!phone.trim() || !phone.trim()) {
+      return toast.warn("Malumot to'liq emas")
+    }
     let text = "Buyurtma %0A%0A";
     text += ` Ism: ${name} %0A`;
     text += `Familiya: ${lastName} %0A`;
@@ -158,14 +166,14 @@ const Cart = () => {
         <h1>Make Payment</h1>
         <form className='checkout__form' action="">
           <div className="fullname">
-            <input onChange={(e) => setName(e.target.value)} value={name} type="text" placeholder='First Name' />
+            <input required onChange={(e) => setName(e.target.value)} value={name} type="text" placeholder='First Name' />
             <input onChange={(e) => lastName(e.target.value)} value={lastName} type="text" placeholder='Last Name' />
           </div>
           <div className="adrec">
-            <input onChange={(e) => setEmail(e.target.value)} value={email} type="text" placeholder='Email Address' />
-            <input onChange={(e) => setPhone(e.target.value)} value={phone} type="text" placeholder='Mobile Phone' />
+            <input required onChange={(e) => setEmail(e.target.value)} value={email} type="text" placeholder='Email Address' />
+            <input required onChange={(e) => setPhone(e.target.value)} value={phone} type="text" placeholder='Mobile Phone' />
           </div>
-          <textarea placeholder='Address for Delivery'></textarea>
+          <textarea placeholder='Address for Delivery' required></textarea>
           <div className="select__card">
             <div className="select__title">
               <img src={logo1} alt="" />
