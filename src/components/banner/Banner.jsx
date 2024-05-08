@@ -4,11 +4,11 @@ import rasm from '../../images/tufli.png'
 
 function Banner() {
     return (
-        <div className='container'>
+        <div className='container2'>
             <div className="banner__bg">
                 <div className="banner">
                     <div className="banner__left">
-                        <h2>Adidas Men RunningSneakers</h2>
+                        <h2>Adidas Men Running Sneakers</h2>
                         <p>Performance and design. Taken right to the edge.</p>
                         <button>SHOP NOW</button>
                     </div>
@@ -17,6 +17,7 @@ function Banner() {
                     </div>
                 </div>
             </div>
+            <div className="banerbg"></div>
         </div>
     )
 }

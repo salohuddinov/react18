@@ -3,6 +3,7 @@ import wishlistSlice from "./wishlistSlice";
 import cartSlice from "./cartSlice";
 import { api } from "./api";
 
+
 export const store = configureStore({
   reducer: {
     wishlist: wishlistSlice,

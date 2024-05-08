@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 33px 0;
+    margin-top: 55px;
 }
 
 .main__top__card {
@@ -12,6 +13,7 @@
 .main__top__card img {
     display: flex;
     margin: 0 auto;
+    object-fit: contain;
 }
 
 .main__top__card h3 {
@@ -67,11 +69,13 @@
 .main__centr__img {
     width: 116.95px;
     height: 87.72px;
+    object-fit: contain;
 }
 
 .main__centr__card img {
     width: 144.9px;
     height: 52.18px;
+    object-fit: contain;
 }
 
 .main__centr__right h4 {

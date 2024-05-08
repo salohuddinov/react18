@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Login.css';
 import axios from 'axios';
 import { toast } from 'react-toastify';
@@ -14,6 +14,10 @@ function Login() {
     const [showPassword, setShowPassword] = useState(false)
     const [username, setUsername] = useState("mor_2314")
     const [password, setPassword] = useState("83r5^_")
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     const navigate = useNavigate()
 

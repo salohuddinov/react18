@@ -53,11 +53,11 @@
 
 .radus {
     display: inline-block;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     background-color: rgb(0, 166, 255);
     border-radius: 50%;
-    margin-left: 405px;
+    margin-left: 415px;
     margin-top: -135px;
 }
 

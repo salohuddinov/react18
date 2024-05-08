@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react"
 import './Products.css'
-import axios from "axios"
+import axios from "../../api"
 import { useDispatch, useSelector } from "react-redux"
 import { toggleToWishes } from "../../context/wishlistSlice"
 import { addToCard } from "../../context/cartSlice";
 import { Link } from 'react-router-dom'
-import { toast } from 'react-toastify';
+import { API_URL } from "../../static"
 import Skeleton from '../skeleton/Skeleton'
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -19,7 +19,6 @@ const Products = () => {
     const [categoryValue, setCategoryValue] = useState("all")
     const dispatch = useDispatch()
     const wishes = useSelector(state => state.wishlist.value)
-    const API_URL = "https://fakestoreapi.com/products"
 
     useEffect(() => {
         axios
@@ -52,20 +51,8 @@ const Products = () => {
                     <img src={el.image} alt="" />
                 </div>
                 <span>
-                    <button className='span__icons' onClick={() => dispatch(addToCard(el))
-                        (toast.success("add to cart", {
-                            position: "top-right",
-                            autoClose: 3000,
-                            theme: "dark"
-                        },))
-                    }><ShoppingCartOutlinedIcon /></button>
-                    <button className='span__icons' onClick={() => dispatch(toggleToWishes(el))
-                        (toast.success("add to like", {
-                            position: "top-right",
-                            autoClose: 3000,
-                            theme: "dark"
-                        },))
-                    }>
+                    <button className='span__icons' onClick={() => dispatch(addToCard(el))}><ShoppingCartOutlinedIcon /></button>
+                    <button className='span__icons' onClick={() => dispatch(toggleToWishes(el))}>
                         {
                             wishes.some(w => w.id === el.id) ?
                                 <FavoriteOutlinedIcon /> :

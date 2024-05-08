@@ -1,8 +1,9 @@
 .hero__img {
-    width: 1718.48px;
+    width: 1600px;
     height: 650px;
-    margin-left: -105px;
+    margin-left: -120px;
     margin-bottom: 100px;
+    object-fit: contain;
     background-image: url(../../images/hero.png);
 }
 

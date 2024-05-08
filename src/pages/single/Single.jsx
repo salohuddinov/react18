@@ -22,6 +22,10 @@ function Single() {
 
     useEffect(() => {
         window.scrollTo(0, 0)
+    }, [id])
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
         setLoding(true)
         axios
             .get(`${API_URL}/${id}`)
