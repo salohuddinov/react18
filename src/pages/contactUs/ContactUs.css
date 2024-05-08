@@ -86,8 +86,7 @@
 }
 
 .name input {
-    width: 100%;
-    max-width: 490px;
+    width: 490px;
     height: 73.17px;
     border: 1px solid rgb(150, 147, 147);
     border-radius: 3px;
@@ -109,8 +108,7 @@
 }
 
 .message textarea {
-    width: 100%;
-    max-width: 490px;
+    width: 490px;
     height: 229.76px;
     border: 1px solid rgb(150, 147, 147);
     border-radius: 3px;
@@ -122,4 +120,25 @@
 .message textarea:hover,
 .name input:hover {
     border: 1px solid rgb(51, 160, 255);
+}
+
+@media screen and (max-width: 500px) {
+
+    .name input {
+        width: 100%;
+        height: 60px;
+    }
+
+    .message textarea {
+        width: 100%;
+        height: 100px;
+    }
+
+    .form__title {
+        width: 100%;
+        max-width: 626px;
+        height: 500px;
+        background-color: rgb(0, 166, 255);
+        padding: 50px;
+    }
 }

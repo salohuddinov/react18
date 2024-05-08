@@ -166,3 +166,223 @@
         display: flex;
     }
 }
+
+.card__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content__lrft {
+    display: flex;
+    width: 369px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid rgb(51, 160, 255);
+}
+
+.content__lrft input {
+    width: 100%;
+    max-width: 251px;
+    border: none;
+    border-radius: 5px;
+    padding: 1px 20px;
+}
+
+.content__lrft button {
+    width: 100%;
+    max-width: 118px;
+    height: 60px;
+    border-radius: 0 5px 5px 0;
+    background: rgb(51, 160, 255);
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.content__right {
+    width: 100%;
+    max-width: 377.1px;
+    padding: 10px;
+    box-shadow: 0 0 10px #ddd;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.sub h4 {
+    color: rgb(38, 38, 38);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.sub h2 {
+    color: rgb(34, 38, 42);
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.content__right button {
+    width: 100%;
+    height: 60px;
+    background: rgb(51, 160, 255);
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.checkout button {
+    width: 300px;
+    height: 50px;
+    margin: 5px auto;
+    border-radius: 10px;
+    background: rgb(51, 160, 255);
+    color: rgb(255, 255, 255);
+    font-family: Nunito;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: -2%;
+    text-align: center;
+}
+
+.checkout__form {
+    margin: 5px auto;
+    width: 100%;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    padding: 30px 80px;
+}
+
+.checkout h1 {
+    width: 100%;
+    max-width: 600px;
+    height: 51.53px;
+    color: rgb(64, 191, 255);
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 20px auto;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.fullname {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    margin-top: -30px;
+}
+
+.fullname input {
+    width: 100%;
+    max-width: 380.99px;
+    height: 50px;
+    border-radius: 10px;
+    background: rgb(223, 222, 222);
+    opacity: 0.3;
+    padding: 2px 20px;
+}
+
+.adrec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.adrec h2 {
+    width: 206.49px;
+    color: rgb(64, 191, 255);
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.addrc input {
+    width: 100%;
+    max-width: 215px;
+    height: 50px;
+    border-radius: 10px;
+    background: rgb(223, 222, 222);
+    opacity: 0.3;
+    padding: 2px 20px;
+}
+
+.adrec input {
+    display: inline-block;
+    width: 100%;
+    max-width: 215px;
+    height: 50px;
+    border-radius: 10px;
+    background: rgb(223, 222, 222);
+    opacity: 0.3;
+    padding: 2px 20px;
+}
+
+.checkout__form textarea {
+    width: 100%;
+    height: 122.52px;
+    border-radius: 10px;
+    background: rgb(223, 222, 222);
+    opacity: 0.3;
+    padding: 20px;
+}
+
+.select__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ddd;
+    transition: .5s ease-in-out;
+}
+
+.select__card:hover {
+    background: rgb(235, 240, 255);
+}
+
+.select__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

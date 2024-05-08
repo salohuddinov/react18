@@ -83,9 +83,9 @@ function Navbar() {
             <Box >
               <div className="navvv">
                 <NavLink className='nav__item' to="/">Home</NavLink>
-                <Link to={"#"} className='nav__item'>BAGS</Link>
-                <Link to={"#"} className='nav__item'>SNEAKERS</Link>
-                <Link to={"#"} className='nav__item'>BELT</Link>
+                <Link to={"/bages"} className='nav__item'>BAGS</Link>
+                <Link to={"/sneakers"} className='nav__item'>SNEAKERS</Link>
+                <Link to={"/belt"} className='nav__item'>BELT</Link>
                 <NavLink className='nav__item' to="/contactus">CONTACT</NavLink>
               </div>
             </Box>

@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { toggleToWishes } from "../../context/wishlistSlice"
 import { addToCard } from "../../context/cartSlice";
 import { Link } from 'react-router-dom'
+import { toast } from 'react-toastify';
 import Skeleton from '../skeleton/Skeleton'
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -51,8 +52,20 @@ const Products = () => {
                     <img src={el.image} alt="" />
                 </div>
                 <span>
-                    <button className='span__icons' onClick={() => dispatch(addToCard(el))}><ShoppingCartOutlinedIcon /></button>
-                    <button className='span__icons' onClick={() => dispatch(toggleToWishes(el))}>
+                    <button className='span__icons' onClick={() => dispatch(addToCard(el))
+                        (toast.success("add to cart", {
+                            position: "top-right",
+                            autoClose: 3000,
+                            theme: "dark"
+                        },))
+                    }><ShoppingCartOutlinedIcon /></button>
+                    <button className='span__icons' onClick={() => dispatch(toggleToWishes(el))
+                        (toast.success("add to like", {
+                            position: "top-right",
+                            autoClose: 3000,
+                            theme: "dark"
+                        },))
+                    }>
                         {
                             wishes.some(w => w.id === el.id) ?
                                 <FavoriteOutlinedIcon /> :
@@ -84,7 +97,7 @@ const Products = () => {
                 <h4>${el.rating.count}</h4>
                 <h2>24% Off</h2>
             </div>
-        </div>)
+        </div >)
     let categoryItems = categories?.map((el, inx) => <li className='conculution__li' onClick={() => setCategoryValue(el)} key={inx}> {el} </li>)
 
     return (
