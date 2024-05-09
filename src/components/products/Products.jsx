@@ -9,6 +9,7 @@ import { API_URL } from "../../static"
 import Skeleton from '../skeleton/Skeleton'
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 const Products = () => {
@@ -19,6 +20,8 @@ const Products = () => {
     const [categoryValue, setCategoryValue] = useState("all")
     const dispatch = useDispatch()
     const wishes = useSelector(state => state.wishlist.value)
+    const cart = useSelector(state => state.cart.value)
+
 
     useEffect(() => {
         axios
@@ -51,7 +54,13 @@ const Products = () => {
                     <img src={el.image} alt="" />
                 </div>
                 <span>
-                    <button className='span__icons' onClick={() => dispatch(addToCard(el))}><ShoppingCartOutlinedIcon /></button>
+                    <button className='span__icons' onClick={() => dispatch(addToCard(el))}>
+                        {
+                            cart.some(c => c.id === el.id) ?
+                                <ShoppingCartIcon /> :
+                                <ShoppingCartOutlinedIcon />
+                        }
+                    </button>
                     <button className='span__icons' onClick={() => dispatch(toggleToWishes(el))}>
                         {
                             wishes.some(w => w.id === el.id) ?

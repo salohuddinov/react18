@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './Wishlist.css';
 import { useSelector } from 'react-redux';
+import { wishlistSlice } from '../../context/wishlistSlice';
 import Products from '../../components/products/Products';
 import not from '../../images/wishlist.png';
 
@@ -15,11 +16,9 @@ const Wishlist = () => {
   return (
     <div className="wishlist-container">
       {hasWishes ? (
-        <Products data={wishes} />
+        <Products data={wishes.map(wish => wish.product)} />
       ) : (
-        <div className="empty-wishlist">
-          <img className="not" src={not} alt="No items in wishlist" />
-        </div>
+        <img className="not" src={not} alt="No items in wishlist" />
       )}
     </div>
   );
