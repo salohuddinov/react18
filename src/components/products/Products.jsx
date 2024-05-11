@@ -7,6 +7,7 @@ import { addToCard } from "../../context/cartSlice";
 import { Link } from 'react-router-dom'
 import { API_URL } from "../../static"
 import Skeleton from '../skeleton/Skeleton'
+import Star from '../../components/star/Star';
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -74,20 +75,7 @@ const Products = () => {
             <Link to={`/single/${el.id}`}>
                 <h2>{el.title}</h2>
             </Link>
-            <div className="star">
-                <div class="rating">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text"></label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text"></label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text"></label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text"></label>
-                    <input checked="" type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text"></label>
-                </div>
-            </div>
+            <Star />
             <div className="pricee">
                 <h3>${el.price}</h3>
                 <h4>${el.rating.count}</h4>

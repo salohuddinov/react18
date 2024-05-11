@@ -53,9 +53,9 @@ function Single() {
                         <img className='single__img' src={product?.image} alt="sg" />
                         <div className="imgs">
                             <img className='smal__img' src={product?.image} alt="hjbbhb" />
+                            <img className='smal__img' src="https://random.imagecdn.app/500/390" alt="hjbbhb" />
                             <img className='smal__img' src={product?.image} alt="hjbbhb" />
-                            <img className='smal__img' src={product?.image} alt="hjbbhb" />
-                            <img className='smal__img' src={product?.image} alt="hjbbhb" />
+                            <img className='smal__img' src="https://random.imagecdn.app/500/390" alt="hjbbhb" />
                         </div>
                     </div>
                     <div className="single__right">
@@ -123,7 +123,7 @@ function Single() {
                         </div>
                     </div>
                     <div className="single__card">
-                        <img src={product?.image} alt="nsjk" />
+                        <img src="https://random.imagecdn.app/500/390"></img>
                         <Star />
                         <div className="pricce">
                             <h2>${product?.price}</h2>
